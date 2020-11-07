@@ -15,7 +15,7 @@ f = wave.open("samples/FAI_amplified.wav","rb")
 #f = wave.open("samples/sample.wav","rb")
 
 #instantiate PyAudio  
-p = pyaudio.PyAudio()  
+p = pyaudio.PyAudio(2,3)  
 
 #open stream  
 stream = p.open(format = p.get_format_from_width(f.getsampwidth()),  
